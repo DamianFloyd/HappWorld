@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            margin: 0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 5px 10px;
+        }
+
+        header nav ul li a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
+
+        .image-section {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .image-section img {
+            width: 30%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .article-section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .article-section h2 {
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Services</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="News.html">News</a></li>
+            </ul>
+        </nav>
+        <div>
+            <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="facebook-icon">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank" class="twitter-icon">Twitter</a>
+            <a href="https://www.instagram.com" target="_blank" class="instagram-icon">Instagram</a>
+            <a href="https://www.linkedin.com" target="_blank" class="linkedin-icon">LinkedIn</a>
+        </div>
+
+
+
+    </header>
+
+    <div class="image-section">
+        <img src="imgcompress/chess-min (1).jpg" alt="Chess game with animal pieces">
+        <img src="imgcompress/dogplaying-min.jpg" alt="A dog playing video games">
+        <img src="imgcompress/catsplaying-min.jpg" alt="Cats playing soccer">
+    </div>
+
+    <h1>True or False Game</h1>
+    <p id="question">Loading...</p>
+    <button onclick="checkAnswer(true)">True</button>
+    <button onclick="checkAnswer(false)">False</button>
+    <p id="result"></p>
+
+    <script>
+        const questions = [
+            { question: "The last decade was not the hottest ever recorded.", answer: false },
+            { question: "Over 2.2 billion people dont have clean drinking water.", answer: true },
+            { question: "Denmark is the cleanest country in the world.", answer: true },
+            { question: "It is safe to drnk untrated sea water", answer: false },
+            { question: "Recycling reduces waste.", answer: true },
+            { question: "Air pollution does not contribute to climate change.", answer: false },
+            { question: "The Elephant is the biggest land animal.", answer: true }, 
+            { question: "It take about 1 million years for a glass bottle to decompose.", answer: true },
+            { question: "The Earth's temperature will be approximately 1.5°C (2.7°F) warmer by 2030.", answer: true },
+            { question: "There is definatle something I can do to save the environment.", answer: true },
+        ];
+
+        
+
+        let currentQuestion = {};
+
+        function loadQuestion() {
+            currentQuestion = questions[Math.floor(Math.random() * questions.length)];
+            document.getElementById("question").innerText = currentQuestion.question;
+            document.getElementById("result").innerText = "";
+        }
+
+        function checkAnswer(userAnswer) {
+            if (userAnswer === currentQuestion.answer) {
+                document.getElementById("result").innerText = "✅ Correct!";
+            } else {
+                document.getElementById("result").innerText = "❌ Wrong!";
+            }
+            setTimeout(loadQuestion, 2000);
+        }
+
+        loadQuestion();
+    
+
+    
+
+</script>
+
+<marquee><mark>Thanks you so much for helping the planet!</mark> </marquee>
+
+    </script>
+
+<h1>HappyWorld Eco Challenge Matching Game</h1>
+<p>Match these Goals to its description:</p>
+
+<div>
+    <p>1. No Poverty</p>
+    <select id="q1">
+        <option value="">--Select Description--</option>
+        <option value="End hunger">End hunger</option>
+        <option value="End poverty in all its forms">End poverty in all its forms</option>
+        <option value="Achieve gender equality">Achieve gender equality</option>
+    </select>
+</div>
+
+<div>
+    <p>2. Quality Education</p>
+    <select id="q2">
+        <option value="">--Select Description--</option>
+        <option value="Ensure inclusive and equitable quality education">Ensure inclusive and equitable quality education</option>
+        <option value="Ensure access to clean water and sanitation">Ensure access to clean water and sanitation</option>
+        <option value="Protect marine life">Protect marine life</option>
+    </select>
+</div>
+
+<button onclick="checkAnswers()">Submit</button>
+<p id="result"></p>
+
+<script>
+    function checkAnswers() {
+        let score = 0;
+        const feedback = document.getElementById("result");
+
+        const answer1 = document.getElementById("q1").value;
+        const answer2 = document.getElementById("q2").value;
+
+        if (answer1 === "End poverty in all its forms") score++;
+        if (answer2 === "Ensure inclusive and equitable quality education") score++;
+
+        if (score === 2) {
+            feedback.textContent = "Great job! You matched all correctly!";
+            feedback.className = "correct";
+        } else {
+            feedback.textContent = `You got ${score}/2 correct. Try again!`;
+            feedback.className = "incorrect";
+        }
+    }
+</script>
+
+
+
+
+
+
+
+</script>
+
+
+<mark>Easter Egg</mark> 
+
+<p id="sdg-egg" style="cursor: pointer; color: blue; text-decoration: underline;">
+    Click here for a surprise!
+</p>
+<p id="sdg-message" style="display: none;">
+    🌍 You found the secret Eco message! Small actions make a big difference. 
+    Reduce, reuse, recycle! ♻️
+</p>
+<p> <strong>HappyWorld</strong> </p>
+<script>
+    document.getElementById("sdg-egg").addEventListener("click", function() {
+        document.getElementById("sdg-message").style.display = "block";
+    });
+</script>
+
+
+
+    <footer>
+        <p>&copy;  Terms & Conditions🌍 HappyWorld Inc. 2025 All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+

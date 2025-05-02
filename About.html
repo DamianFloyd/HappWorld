@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 5px 10px;
+        }
+
+        header nav ul li a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
+
+        .image-section {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .image-section img {
+            width: 30%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .article-section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .article-section h2 {
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <h1 style="text-align: center;">About Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="News.html">News</a></li>
+            </ul>
+
+        
+        </nav>
+        <div>
+            <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="facebook-icon">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank" class="twitter-icon">Twitter</a>
+            <a href="https://www.instagram.com" target="_blank" class="instagram-icon">Instagram</a>
+            <a href="https://www.linkedin.com" target="_blank" class="linkedin-icon">LinkedIn</a>
+        </div>
+
+       
+
+    </header>
+
+    <div class="image-section">
+        <img src="imgcompress/leftmanmin.jpg" alt="Indian male in suite">
+        <img src="imgcompress/centerman-min.jpg" alt="White male in suite">
+        <img src="imgcompress/rightgirl-min.jpg" alt=" Woman in a business suite">
+    </div>
+
+    <marquee> <mark>🌳 In nature, nothing exists alone!  🌿 The Earth is what we all have in common! </mark></marquee>
+
+
+
+    <div class="Main Article Section">
+        <h2> Mission Statement</h2>
+        <p> <strong>HappyWorld</strong> provides inspiration to people by educating them about the major issues affecting the world, its life forms and providing solutions and initiative to solve them.
+            
+        </p>
+        <h2>Core Values</h2>
+        <p> Sustainability - Solutions that protect the world for future generations.
+            
+            Environmental Stewardship - Maintaining the  ecosystems and act to preserve them.
+            
+            Education & Awareness - Providing knowledge to inspire change and to inform. 
+            Respect for Nature - Showing respect for the world and all aspects of it.</p>
+        <h2>Meet the Team</h2>
+        <p>
+            Welcome to about us page. We are please to introduce the developers  of the <strong>HappyWorld</strong>. They are the ones who have made this 
+            website a success and continues to give thei support daily towards it development. Starting from the left we have John Black our senior web developer who is incharge of the daily activities of the website. To the center of the page we have Floyd Henry who is the CEO of <strong>HappyWordl</strong>. 
+            His vision made this entire process possible. To the right there is May Chin who is in charge of Public Relations and all the events planning for the website
+        </p>
+        <p>
+            Thank you all for continuing to supprt the <strong>HappyWorld</strong> family and joining us on our journey and for being part of our community striving to save the world!
+        </p>
+    </div>
+
+</script>
+
+
+<mark>Easter Egg </mark>
+
+<p id="sdg-egg" style="cursor: pointer; color: blue; text-decoration: underline;">
+    Click here for a surprise!
+</p>
+<p id="sdg-message" style="display: none;">
+    🌍 You found the secret message! More than 1 million species are at risk of extinction due to climate change.
+    Reduce, Reuse, Recycle! ♻️
+</p>
+<p> <strong>HappyWord</strong> </p>
+<script>
+    document.getElementById("sdg-egg").addEventListener("click", function() {
+        document.getElementById("sdg-message").style.display = "block";
+    });
+</script>
+
+
+
+    <footer>
+        <p>&copy; Terms & Conditions🌍 HappyWorld Inc. 2025 All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

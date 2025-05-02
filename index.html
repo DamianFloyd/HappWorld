@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 5px 10px;
+        }
+
+        header nav ul li a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
+
+        .video-section {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .video-section video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-section .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+
+        .video-section .video-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            font-size: 36px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+        }
+
+        .article-section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .article-section h2 {
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Home</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="News.html">News</a></li>
+            </ul>
+        </nav>
+
+        <div>
+          <div class="social-icons">
+          <a href="https://www.facebook.com" target="_blank" class="facebook-icon">Facebook</a>
+          <a href="https://www.twitter.com" target="_blank" class="twitter-icon">Twitter</a>
+          <a href="https://www.instagram.com" target="_blank" class="instagram-icon">Instagram</a>
+          <a href="https://www.linkedin.com" target="_blank" class="linkedin-icon">LinkedIn</a>
+      </div>
+
+
+    </header>
+
+    <div class="video-section">
+        <video autoplay muted loop>
+            <source src="videocom/worldcom - Copy (2).mp4" type="video/mp4">
+            
+        </video>
+        <div class="video-overlay"></div>
+        <div class="video-text">
+            HappyWorld 
+            <marquee> Earth need your help !!!</marquee>
+        </div>
+
+        <audio controls>
+            <source src="musiccom/Wearetheworld.mp3" type="audio/mpeg">
+            
+            
+        </audio>
+
+
+
+    </div>
+
+
+
+
+    <div class="article-section">
+        <h2>Our Story</h2>
+        <p>
+            Welcome to our home page! We’re excited to share our journey, vision, and values with you. HappyWorld website was created based on the lack of knowledge and concern that individuals have about the major issues facing the world. 
+            It seeks to impart both reliable and accessible information that is easy to understand, with the hope of inspiring people to make a positive difference. The website will provide educational games to increase user awareness and will further give real world tips to foster an ecofriendly community. The website was inspired by the SDG’s (Sustainable Development Goals) developed in 2015 which aims to address world challenges such as climate change and life below water.
+        </p>
+
+        <div class="gallery-item">
+            <img src="imgcompress/beachcleaning-min.jpg" alt="People at a recycle confrenece">
+            <p><strong>HappyWorld</strong> beach clean up day 2023 </p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="imgcompress/rivercleaining-min.jpg" alt="People at a recycle confrenece">
+            <p><strong>HappyWorld</strong> River clean Up day 2024 </p>
+        </div>
+    </script>
+
+    <mark>Easter Egg</mark>
+    
+    <p id="sdg-egg" style="cursor: pointer; color: blue; text-decoration: underline;">
+       Click here for a surprise!
+    </p>
+    <p id="sdg-message" style="display: none;">
+       🌍 You found the secret message. Over 8 million metric tons of plastic end up in the oceans every year!  Recycling helps! ♻️
+    </p>
+    <p> <strong>HappyWorld</strong></p>
+    <script>
+       document.getElementById("sdg-egg").addEventListener("click", function() {
+           document.getElementById("sdg-message").style.display = "block";
+       });
+    </script>
+
+    </div>
+
+    <footer>
+        <p>&copy;  Terms & Conditions🌍 HappyWorld Inc. 2025 All Rights Reserved</p>
+    </footer>
+</body>
+</html>

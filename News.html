@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Page</title>
+    <style>
+       
+        nav {
+            background-color: #333;
+            color: rgb white,
+            text-align center;
+            padding: 1em;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+      
+
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 20px;
+        }
+
+        .content img {
+            width: 100%; 
+            height: auto;
+        }
+
+        .article-section {
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<h1 style="text-align: center;"> Upcomming Events, News and Reviews</h1>
+<body>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Services.html">Services</a>
+        <a href="Contact.html">Contact</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="News.html">News</a>
+    </nav>
+    <div>
+      <div class="social-icons">
+      <a href="https://www.facebook.com" target="_blank" class="facebook-icon">Facebook</a>
+      <a href="https://www.twitter.com" target="_blank" class="twitter-icon">Twitter</a>
+      <a href="https://www.instagram.com" target="_blank" class="instagram-icon">Instagram</a>
+      <a href="https://www.linkedin.com" target="_blank" class="linkedin-icon">LinkedIn</a>
+  </div>
+  
+    <div class="content">
+        <div>
+            <img src="imgcompress/Marathon-min.jpg" alt="People running a marathon">
+            <div class="article-section">
+                <h2> The third Annual HappyWorld Marathon</h2>
+                <p>The third annual marathon will be held at Koga Park on June 15th, 2025. The course this year is approximately 5.5.km across the beautiful terrane of the park, the breath-taking views of the city and along the boardwalk overlooking the ocean. Runners will be given a special numbered T-shirts along with a first aid kit from one of our sponsors. Volunteers are also welcome along the route to handout water and other refreshments to the runners. 
+                    Participation in the marathon is free, however as always, your donations are welcome.</p>
+            </div>
+        </div>
+        <div>
+            <img src="imgcompress/treeplanting-min (3).jpg" alt="People planting trees">
+            <div class="article-section">
+                <h2>HappyWorld Tree Planting Day 2025</h2>
+                <p>Saving the trees around the world is the priority of all its inhabitants. The HappyWorld family is pleased to be hosting this event at the Omiya Wildlife Reserve for the third year. 
+                    Each volunteer will be planting at least two trees on the day using the gardening equipment provided. The event will be streaming live on the global wildlife network. Trees help to absorb (CO2) and release clean oxygen to help fight climate change and cool the planet. These trees will provide homes for birds, insects and other lifeforms from your efforts.</p>
+            </div>
+        </div>
+        <div>
+            <img src="imgcompress/concert-min.jpg" alt="People at a concert">
+            <div class="article-section">
+                <h2>Annual HappyWorld Eco Concert 2025</h2>
+                <p>The HappyWorld Eco concert is aimed at building awareness about the issues affecting the environments around the world, like climate change. 
+                    It will bring together like-minded people from different backgrounds for a mixture of entertainment, socialization and educational messages to ignite interest in environmental activism. This fund-raising event will be donating its proceeds directly to the research facility for climate change at the Phoenix University of Science. There will be Eco-friendly vendor boots and green tech companies giving short presentations on clean energy..</p>
+            </div>
+            
+            </div>
+        </div>
+
+        <audio controls>
+            <source src="musiccom/Peaked My Interest - Nathan Moore (1).mp3" type="audio/mpeg">
+            
+        </audio>
+    </div>
+
+    <marquee> <mark>🌻Together, we can plant the seeds for a sustainable future!</mark> </marquee>
+
+    <section id="reviews">
+        <article class="review">
+            <h2> Review by Stacy Grant March 14th, 2025</h2>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>"The experience of working with other Eco minded people planting trees was amazing!"</p>
+        </article>
+
+        <article class="review">
+            <h2>Review by Calvin Smith December 6th, 2024. </h2>
+            <p>⭐⭐⭐⭐</p>
+            <p>"The seminar on LED light bulbs was very informative and way better than expected."</p>
+        </article>
+
+        <article class="review">
+            <h2>Review by Roy Jones June 21st, 2024. </h2>
+            <p>⭐⭐⭐⭐</p>
+            <p>"The cleaning of the birds from the south coast oil spill was very heart warming."</p>
+        </article>
+    </section>
+
+
+   
+</section>
+   
+</div>
+</script>
+
+ Easter Egg 
+
+<p id="sdg-egg" style="cursor: pointer; color: blue; text-decoration: underline;">
+    Click here for a surprise!
+</p>
+<p id="sdg-message" style="display: none;">
+    🌍 You found the secret message. Over 8 million metric tons of plastic end up in the oceans every year!  Recycling helps! ♻️
+</p>
+<p> HappyWorld</p>
+<script>
+    document.getElementById("sdg-egg").addEventListener("click", function() {
+        document.getElementById("sdg-message").style.display = "block";
+    });
+</script>
+
+    
+    <footer>
+        <p>&copy;  Terms & Conditions🌍 HappyWorld Inc. 2025 All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+
+    
